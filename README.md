@@ -1,12 +1,10 @@
 <!--
   HOW TO USE THIS FILE
-  1. Replace every [BRACKETED] placeholder below with your real info.
-  2. Replace GITHUB_USERNAME everywhere with your actual GitHub handle
-     (find/replace is fastest).
-  3. Push this to a repo named exactly the same as your username,
-     e.g. github.com/GITHUB_USERNAME/GITHUB_USERNAME
-  4. The stats/streak/snake widgets need nothing from you except a
-     correct username — they pull live data automatically.
+  1. Replace every [BRACKETED] placeholder below with your real info
+     (LinkedIn, YouTube, email, projects, quote).
+  2. Push this to a repo named exactly: KunalKashyap12/KunalKashyap12
+  3. The stats/streak/snake widgets are already wired to your handle
+     and need no further edits — they pull live data automatically.
 -->
 
 <p align="center">
@@ -18,9 +16,10 @@
 </p>
 
 <p align="center">
-  <a href="[LINKEDIN_URL]"><img src="https://img.shields.io/badge/LinkedIn-Connect-8B5CF6?style=flat-square&logo=linkedin&logoColor=white&labelColor=161b22"></a>
-  <a href="[YOUTUBE_URL]"><img src="https://img.shields.io/badge/YouTube-Subscribe-8B5CF6?style=flat-square&logo=youtube&logoColor=white&labelColor=161b22"></a>
-  <a href="mailto:[YOUR_EMAIL]"><img src="https://img.shields.io/badge/Email-Say%20hi-8B5CF6?style=flat-square&logo=gmail&logoColor=white&labelColor=161b22"></a>
+  <a href="https://www.linkedin.com/in/kunal-kashyap-104282367/"><img src="https://img.shields.io/badge/LinkedIn-Connect-8B5CF6?style=flat-square&logo=linkedin&logoColor=white&labelColor=161b22"></a>
+  <a href="https://leetcode.com/u/Kunal_Kashyap1/"><img src="https://img.shields.io/badge/LeetCode-Profile-8B5CF6?style=flat-square&logo=leetcode&logoColor=white&labelColor=161b22"></a>
+  <a href="https://twitter.com/@KunalKashyap01"><img src="https://img.shields.io/badge/Twitter-Follow-8B5CF6?style=flat-square&logo=x&logoColor=white&labelColor=161b22"></a>
+  <a href="mailto:kunalkashyap5301@gmail.com"><img src="https://img.shields.io/badge/Email-Say%20hi-8B5CF6?style=flat-square&logo=gmail&logoColor=white&labelColor=161b22"></a>
 </p>
 
 <img src="assets/divider.svg" width="100%">
@@ -59,16 +58,16 @@
 ### 📊 Proof of work
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=GITHUB_USERNAME&show_icons=true&hide_border=true&bg_color=0d1117&title_color=8B5CF6&icon_color=3B82F6&text_color=8b949e&count_private=true" height="165">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=GITHUB_USERNAME&layout=compact&hide_border=true&bg_color=0d1117&title_color=8B5CF6&text_color=8b949e" height="165">
+  <img src="https://github-readme-stats.vercel.app/api?username=KunalKashyap12&show_icons=true&hide_border=true&bg_color=0d1117&title_color=8B5CF6&icon_color=3B82F6&text_color=8b949e&count_private=true" height="165">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KunalKashyap12&layout=compact&hide_border=true&bg_color=0d1117&title_color=8B5CF6&text_color=8b949e" height="165">
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=GITHUB_USERNAME&hide_border=true&background=0d1117&stroke=8B5CF6&ring=8B5CF6&currStreakLabel=8B5CF6&sideLabels=8b949e&dates=6b7280" />
+  <img src="https://streak-stats.demolab.com?user=KunalKashyap12&hide_border=true&background=0d1117&stroke=8B5CF6&ring=8B5CF6&currStreakLabel=8B5CF6&sideLabels=8b949e&dates=6b7280" />
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/GITHUB_USERNAME/GITHUB_USERNAME/output/github-snake-dark.svg" alt="snake eating my contributions">
+  <img src="https://raw.githubusercontent.com/KunalKashyap12/KunalKashyap12/output/github-snake-dark.svg" alt="snake eating my contributions">
 </p>
 
 <img src="assets/divider.svg" width="100%">
