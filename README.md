@@ -23,10 +23,10 @@
 
 <br/>
 
-<img src="assets/brand/divider.svg" width="100%" alt="" />
+<img src="assets/divider.svg" width="100%" alt="" />
 
 <!-- ═══════════════════════ SHORT VERSION ═══════════════════════ -->
-<img src="assets/brand/h-short.svg" height="56" alt="The short version" />
+<img src="assets/h-short.svg" height="56" alt="The short version" />
 
 <br/><br/>
 
@@ -40,10 +40,10 @@ I build at the intersection of **math, code, and intelligence**. Currently maste
 
 <br/>
 
-<img src="assets/brand/divider.svg" width="100%" alt="" />
+<img src="assets/divider.svg" width="100%" alt="" />
 
 <!-- ═══════════════════════ ARSENAL ═══════════════════════ -->
-<img src="assets/brand/h-arsenal.svg" height="56" alt="Arsenal" />
+<img src="assets/h-arsenal.svg" height="56" alt="Arsenal" />
 
 <div align="center">
 <br/>
@@ -61,10 +61,10 @@ I build at the intersection of **math, code, and intelligence**. Currently maste
 
 <br/>
 
-<img src="assets/brand/divider.svg" width="100%" alt="" />
+<img src="assets/divider.svg" width="100%" alt="" />
 
 <!-- ═══════════════════════ PROOF OF WORK ═══════════════════════ -->
-<img src="assets/brand/h-proof.svg" height="56" alt="Proof of work" />
+<img src="assets/h-proof.svg" height="56" alt="Proof of work" />
 
 <div align="center">
   <img height="165" src="https://github-readme-stats.vercel.app/api?username=KunalKashyap12&show_icons=true&hide_border=true&bg_color=0d1117&title_color=3B82F6&icon_color=38BDF8&text_color=8b949e&count_private=true" />
@@ -99,7 +99,7 @@ Set up the generator workflow at https://github.com/Platane/snk in your profile 
 
 <br/>
 
-<img src="assets/brand/divider.svg" width="100%" alt="" />
+<img src="assets/divider.svg" width="100%" alt="" />
 
 <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
 <div align="center">
