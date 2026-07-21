@@ -85,6 +85,7 @@ I build at the intersection of **math, code, and intelligence**. Currently maste
 Optional: a "snake eating your contributions" animation.
 Set up the generator workflow at https://github.com/Platane/snk in your profile repo
 (KunalKashyap12/KunalKashyap12), then uncomment the block below.
+-->
 
 <br/>
 
@@ -95,7 +96,7 @@ Set up the generator workflow at https://github.com/Platane/snk in your profile 
     <img alt="snake eating my contributions" width="100%" src="https://raw.githubusercontent.com/KunalKashyap12/KunalKashyap12/output/github-snake-dark.svg" />
   </picture>
 </div>
--->
+
 
 <br/>
 
