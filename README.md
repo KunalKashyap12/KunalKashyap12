@@ -26,7 +26,7 @@
 <img src="assets/divider.svg" width="100%" alt="" />
 
 <!-- ═══════════════════════ SHORT VERSION ═══════════════════════ -->
-<img src="assets/H short" height="56" alt="The short version" />
+<img src="assets/h-short.svg" height="56" alt="The short version" />
 
 <br/><br/>
 
@@ -43,7 +43,7 @@ I build at the intersection of **math, code, and intelligence**. Currently maste
 <img src="assets/divider.svg" width="100%" alt="" />
 
 <!-- ═══════════════════════ ARSENAL ═══════════════════════ -->
-<img src="assets/H arsenal" height="56" alt="Arsenal" />
+<img src="assets/h-arsenal.svg" height="56" alt="Arsenal" />
 
 <div align="center">
 <br/>
