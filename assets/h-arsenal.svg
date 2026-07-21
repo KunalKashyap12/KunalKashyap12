@@ -1,0 +1,6 @@
+<svg width="220" height="56" viewBox="0 0 220 56" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="8" width="5" height="40" rx="2.5" fill="#3B82F6"/>
+  <text x="24" y="37" font-family="'JetBrains Mono','SFMono-Regular',Consolas,monospace" font-size="27" font-weight="700">
+    <tspan fill="#38BDF8">// </tspan><tspan fill="#e6edf3">Arsenal</tspan>
+  </text>
+</svg>
