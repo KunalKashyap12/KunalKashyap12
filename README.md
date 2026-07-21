@@ -30,8 +30,6 @@
 
 <br/><br/>
 
-I build at the intersection of **math, code, and intelligence**. Currently mastering AI/ML from first principles, I focus on understanding how models work under the hood rather than just calling pre-built APIs. From optimizing algorithms to training deep learning models, I love tackling tough technical challenges and building scalable systems. I'm actively documenting my journey, writing clean code, and working on projects that push my engineering limits.
-
 <br/>
 
 <div align="center">
@@ -48,7 +46,7 @@ I build at the intersection of **math, code, and intelligence**. Currently maste
 <div align="center">
 <br/>
 
-<img src="https://skillicons.dev/icons?i=c,cpp,html,css,python,mysql&theme=dark" />
+<img src="https://skillicons.dev/icons?i=c,cpp,html,css,python,mysql,git&theme=dark" />
 
 <br/><br/>
 
@@ -107,7 +105,7 @@ Set up the generator workflow at https://github.com/Platane/snk in your profile 
 
 <br/>
 
-<em>"Continuous learning, continuous deployment."</em>
+<em>"Continuous learning, Continuous deployment."</em>
 
 <br/><br/>
 
