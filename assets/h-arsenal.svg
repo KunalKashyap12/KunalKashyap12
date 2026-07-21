@@ -1,6 +1,10 @@
-<svg width="220" height="56" viewBox="0 0 220 56" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="8" width="5" height="40" rx="2.5" fill="#3B82F6"/>
-  <text x="24" y="37" font-family="'JetBrains Mono','SFMono-Regular',Consolas,monospace" font-size="27" font-weight="700">
-    <tspan fill="#38BDF8">// </tspan><tspan fill="#e6edf3">Arsenal</tspan>
-  </text>
+<svg width="230" height="64" viewBox="0 0 230 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="10" width="7" height="44" rx="3.5" fill="url(#grad)"/>
+  <text x="28" y="43" font-family="'JetBrains Mono','SFMono-Regular',Consolas,monospace" font-size="30" font-weight="800" letter-spacing="5" fill="url(#grad)">ARSENAL</text>
 </svg>
