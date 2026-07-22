@@ -27,15 +27,15 @@
 
 <!-- ═══════════════════════ SHORT VERSION ═══════════════════════ -->
 <img src="assets/h-short.svg" height="56" alt="The short version" />
-
-<br/><br/>
-
 <br/>
 
+
+
+
 <div align="center">
-  <img src="assets/code.svg" width="560" alt="wait" />
+  <img src="assets/code.svg" width="49%" height = "800" alt="wait" />
   &nbsp;&nbsp;
-  <img src="assets/animation.svg" height="300" alt="wait" />
+  <img src="assets/animation.svg" height="300" width = "40%" alt="wait" />
 </div>
 
 <br/>
