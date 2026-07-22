@@ -33,9 +33,9 @@
 
 
 <div align="center">
-  <img src="assets/code.svg" width="49%" height = "500" alt="wait" />
+  <img src="assets/code.svg" width="49%" height = "600" alt="wait" />
   &nbsp;&nbsp;
-  <img src="assets/animation.svg" height="300" width = "40%" alt="wait" />
+  <img src="assets/animation.svg" height="280" width = "40%" alt="wait" />
 </div>
 
 <br/>
