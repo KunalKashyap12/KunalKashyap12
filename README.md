@@ -33,7 +33,9 @@
 <br/>
 
 <div align="center">
-  <img src="assets/code.svg" width="560" alt="class Kunal — a quick intro in code" />
+  <img src="assets/code.svg" width="560" alt="wait" />
+  &nbsp;&nbsp;
+  <img src="assets/animation.svg" height="300" alt="wait" />
 </div>
 
 <br/>
