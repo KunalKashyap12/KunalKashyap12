@@ -2,20 +2,36 @@
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0EA5E9,50:3B82F6,100:1E40AF&height=220&section=header&text=KUNAL%20KASHYAP&fontSize=66&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Code.%20Debug.%20Build&descSize=20&descAlignY=55" />
 
 <!-- ═══════════════════════ TYPING INTRO ═══════════════════════ -->
+
+<!-- 
 <div align="center">
   <a href="https://github.com/KunalKashyap12">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2600&pause=800&color=38BDF8&center=true&vCenter=true&width=650&lines=Code.+Debug.+Build.;Mastering+AI%2FML+from+first+principles.;Understanding+models%2C+not+just+calling+APIs.;Continuous+learning%2C+continuous+deployment." alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2600&pause=800&color=38BDF8&center=true&vCenter=true&width=650&lines=LLM.+Debug.+Build.;Mastering+AI%2FML+from+first+principles.;Understanding+models%2C+not+just+calling+APIs.;Continuous+learning%2C+continuous+deployment." alt="Typing SVG" />
+  </a> -->
+  <div align="center">
+  <a href="https://github.com/KunalKashyap12">
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2600&pause=800&color=38BDF8&center=true&vCenter=true&width=650&lines=LLM+pipelines.+RAG.+AGENTS;Output+%3E+Consumption.;Understanding+models%2C+not+just+calling+APIs.;Continuous+learning%2C+continuous+deployment." alt="Typing SVG" />
   </a>
+</div>
 </div>
 
 <p align="center">
-  <a href="https://github.com/KunalKashyap12">
-    <img src="https://img.shields.io/badge/GitHub-KunalKashyap12-3B82F6?style=flat-square&logo=github&logoColor=white&labelColor=161b22" />
-  </a>
-  <a href="#"> <!-- TODO: paste your LinkedIn URL here -->
+  <a href="https://www.linkedin.com/in/kunal-kashyap-104282367/"> <!-- TODO: paste your LinkedIn URL here -->
     <img src="https://img.shields.io/badge/LinkedIn-Connect-3B82F6?style=flat-square&logo=linkedin&logoColor=white&labelColor=161b22" />
   </a>
-  <a href="mailto:youremail@example.com"> <!-- TODO: paste your email here -->
+   <!-- Twitter / X -->
+  <a href="https://twitter.com/@KunalKashyap01">
+    <img src="https://img.shields.io/badge/Twitter-Follow-1DA1F2?style=flat-square&logo=x&logoColor=white&labelColor=161b22" />
+  </a>
+  <!-- LeetCode -->
+  <a href="https://leetcode.com/u/Kunal_Kashyap1/">
+    <img src="https://img.shields.io/badge/LeetCode-Profile-FFA116?style=flat-square&logo=leetcode&logoColor=white&labelColor=161b22" />
+  </a>
+  <!-- Codeforces -->
+  <a href="https://codeforces.com/profile/kunalkashyap5301">
+    <img src="https://img.shields.io/badge/Codeforces-Profile-1F8ACB?style=flat-square&logo=codeforces&logoColor=white&labelColor=161b22" />
+  </a>
+  <a href="mailto:kunalkashyap5301@gmail.com"> <!-- TODO: paste your email here -->
     <img src="https://img.shields.io/badge/Email-Say%20hi-3B82F6?style=flat-square&logo=gmail&logoColor=white&labelColor=161b22" />
   </a>
   <img src="https://komarev.com/ghpvc/?username=KunalKashyap12&style=flat-square&color=3B82F6&labelColor=161b22&label=PROFILE+VIEWS" />
@@ -61,11 +77,15 @@
 
 <!-- ═══════════════════════ PROOF OF WORK ═══════════════════════ -->
 <img src="assets/h-proof.svg" height="56" alt="Proof of work" />
-
+<!--
 <div align="center">
   <img height="165" src="https://github-readme-stats.vercel.app/api?username=KunalKashyap12&show_icons=true&hide_border=true&bg_color=0d1117&title_color=3B82F6&icon_color=38BDF8&text_color=8b949e&count_private=true" />
   <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KunalKashyap12&layout=compact&hide_border=true&bg_color=0d1117&title_color=3B82F6&text_color=8b949e" />
-</div>
+</div> -->
+<p align="center">
+  <img height="165" src="[https://github-readme-stats.vercel.app/api?username=KunalKashyap12&show_icons=true&hide_border=true&bg_color=0d1117&title_color=3B82F6&icon_color=38BDF8&text_color=8b949e&count_private=true](https://github-readme-stats.vercel.app/api?username=KunalKashyap12&show_icons=true&hide_border=true&bg_color=0d1117&title_color=3B82F6&icon_color=38BDF8&text_color=8b949e&count_private=true)" />
+  <img height="165" src="[https://github-readme-stats.vercel.app/api/top-langs/?username=KunalKashyap12&layout=compact&hide_border=true&bg_color=0d1117&title_color=3B82F6&text_color=8b949e](https://github-readme-stats.vercel.app/api/top-langs/?username=KunalKashyap12&layout=compact&hide_border=true&bg_color=0d1117&title_color=3B82F6&text_color=8b949e)" />
+</p>
 
 <div align="center">
   <img src="https://streak-stats.demolab.com?user=KunalKashyap12&hide_border=true&background=0d1117&stroke=3B82F6&ring=38BDF8&fire=0EA5E9&currStreakLabel=38BDF8&sideLabels=8b949e&dates=6b7280&currStreakNum=e6edf3&sideNums=e6edf3" />
@@ -103,7 +123,7 @@ Set up the generator workflow at https://github.com/Platane/snk in your profile 
 
 <br/>
 
-<em>"Continuous learning, Continuous deployment."</em>
+<em>"You don't have to be great to start, but you have to start to be great."</em>
 
 <br/><br/>
 
