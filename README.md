@@ -1,7 +1,7 @@
 <a href="https://github.com/KunalKashyap12/KunalKashyap12">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/KunalKashyap12/KunalKashyap12/main/dark_mode.svg">
-    <img alt="yourusername's GitHub Profile README" src="https://raw.githubusercontent.com/KunalKashyap12/KunalKashyap12/main/light_mode.svg">
+    <img alt="KunalKashyap12's GitHub Profile README" src="https://raw.githubusercontent.com/KunalKashyap12/KunalKashyap12/main/light_mode.svg">
   </picture>
 </a>
 
@@ -9,7 +9,7 @@
 
 ## Setup instructions
 
-1. **Create the special repo.** Make a repo named exactly `yourusername`
+1. **Create the special repo.** Make a repo named exactly `KunalKashyap12`
    (same as your GitHub username) — GitHub auto-shows its README on your
    profile page.
 
@@ -18,8 +18,7 @@
    - `requirements.txt`
    - `.github/workflows/main.yml`
    - `placeholder_profile.png` (a stand-in avatar, used until you add your own)
-   - this `README.md` (swap `yourusername` for your real username in the
-     `<picture>` tag above)
+   - this `README.md`
 
    To use your own photo instead of the placeholder, add a file named
    `profile.png` (or `profile.jpg`) to the repo root — the script checks

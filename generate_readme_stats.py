@@ -24,7 +24,7 @@ import requests
 from PIL import Image
 
 GITHUB_API = "https://api.github.com/graphql"
-USERNAME = os.environ.get("GH_USERNAME", "yourusername")
+USERNAME = os.environ.get("GH_USERNAME", "KunalKashyap12")
 TOKEN = os.environ.get("GH_TOKEN")
 
 # Path to your profile picture. Drop a photo named "profile.png" (or .jpg)
