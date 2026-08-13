@@ -1,11 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="484" height="581" viewBox="0 0 484 581">
-<rect width="484" height="581" rx="10" fill="#ffffff" stroke="#e1e4e8" stroke-width="1"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="755" height="581" viewBox="0 0 755 581">
+<rect width="755" height="581" rx="10" fill="#ffffff" stroke="#e1e4e8" stroke-width="1"/>
 <style>text{font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;}</style>
-<g transform="translate(24,38)">
+<text x="24" y="38" font-size="8" font-family="Consolas, Menlo, monospace" fill="#0969da" xml:space="preserve">
+<tspan x="24" dy="0">.................::::::::::::::.................</tspan>
+<tspan x="24" dy="8.0">............::::::::::::::::::::::::............</tspan>
+<tspan x="24" dy="8.0">.........::::::::::::::::::::::::::::::.........</tspan>
+<tspan x="24" dy="8.0">.......::::::::::::::::::::::::::::::::::.......</tspan>
+<tspan x="24" dy="8.0">.....::::::::::::::::::::::::::::::::::::::.....</tspan>
+<tspan x="24" dy="8.0">....::::::::::::::::-=+**+=-::::::::::::::::....</tspan>
+<tspan x="24" dy="8.0">...:::::::::::::::=*%%%%%%%%#=:::::::::::::::...</tspan>
+<tspan x="24" dy="8.0">..:::::::::::::::+%%%%%%%%%%%%*:::::::::::::::..</tspan>
+<tspan x="24" dy="8.0">.:::::::::::::::-%%%%%%%%%%%%%%=:::::::::::::::.</tspan>
+<tspan x="24" dy="8.0">::::::::::::::::-%%%%%%%%%%%%%%=::::::::::::::::</tspan>
+<tspan x="24" dy="8.0">:::::::::::::::::+%%%%%%%%%%%%*:::::::::::::::::</tspan>
+<tspan x="24" dy="8.0">::::::::::::::::::=#%%%%%%%%#+-:::::::::::::::::</tspan>
+<tspan x="24" dy="8.0">:::::::::::::::::::-+*#%%%#+-:::::::::::::::::::</tspan>
+<tspan x="24" dy="8.0">::::::::::::::::=+##%%%%%%%%##+=-:::::::::::::::</tspan>
+<tspan x="24" dy="8.0">::::::::::::::=#%%%%%%%%%%%%%%%%#+::::::::::::::</tspan>
+<tspan x="24" dy="8.0">.:::::::::::-*%%%%%%%%%%%%%%%%%%%%#-:::::::::::.</tspan>
+<tspan x="24" dy="8.0">..:::::::::-#%%%%%%%%%%%%%%%%%%%%%%#-:::::::::..</tspan>
+<tspan x="24" dy="8.0">...::::::::*%%%%%%%%%%%%%%%%%%%%%%%%#::::::::...</tspan>
+<tspan x="24" dy="8.0">....::::::-%%%%%%%%%%%%%%%%%%%%%%%%%%-::::::....</tspan>
+<tspan x="24" dy="8.0">.....::::::-----================-----::::::.....</tspan>
+<tspan x="24" dy="8.0">.......::::.::::::::::::::::::::::::.::::.......</tspan>
+<tspan x="24" dy="8.0">.........::::::::::::::::::::::::::::::.........</tspan>
+<tspan x="24" dy="8.0">............::::::::::::::::::::::::............</tspan>
+<tspan x="24" dy="8.0">................::::::::::::::::................</tspan>
+</text>
+<line x1="274.4" y1="20" x2="274.4" y2="561" stroke="#e1e4e8" stroke-width="1"/>
+<g transform="translate(294.4,38)">
 <text x="0" y="0" font-size="13" font-family="Consolas, Menlo, monospace" xml:space="preserve"><tspan x="0" dy="0"><tspan fill="#24292e" font-weight="700" font-size="16">KunalKashyap12@github</tspan></tspan>
 <tspan x="0" dy="19"><tspan fill="#c9ccd1">------------------------------------------------------</tspan></tspan>
 <tspan x="0" dy="19"><tspan fill="#953800">OS:</tspan><tspan fill="#c9ccd1"> ................................... </tspan><tspan fill="#24292e">Windows 10, Linux</tspan></tspan>
-<tspan x="0" dy="19"><tspan fill="#953800">Uptime:</tspan><tspan fill="#c9ccd1"> ...................... </tspan><tspan fill="#24292e">1 years, 2 months, 24 days</tspan></tspan>
+<tspan x="0" dy="19"><tspan fill="#953800">Uptime:</tspan><tspan fill="#c9ccd1"> ...................... </tspan><tspan fill="#24292e">3 years, 2 months, 10 days</tspan></tspan>
 <tspan x="0" dy="19"><tspan fill="#953800">Host:</tspan><tspan fill="#c9ccd1"> ............................ </tspan><tspan fill="#24292e">Company / Machine name</tspan></tspan>
 <tspan x="0" dy="19"><tspan fill="#953800">Kernel:</tspan><tspan fill="#c9ccd1"> ........................... </tspan><tspan fill="#24292e">Your job title / role</tspan></tspan>
 <tspan x="0" dy="19"><tspan fill="#953800">IDE:</tspan><tspan fill="#c9ccd1"> .................................... </tspan><tspan fill="#24292e">VSCode, PyCharm</tspan></tspan>
@@ -23,10 +50,10 @@
 <tspan x="0" dy="19"><tspan fill="#953800">Discord:</tspan><tspan fill="#c9ccd1"> ..................................... </tspan><tspan fill="#24292e">yourhandle</tspan></tspan>
 <tspan x="0" dy="19"></tspan>
 <tspan x="0" dy="19"><tspan fill="#8250df" font-weight="700">--- GitHub Stats ---</tspan></tspan>
-<tspan x="0" dy="19"><tspan fill="#953800">Repos:</tspan><tspan fill="#c9ccd1"> ............................... </tspan><tspan fill="#24292e">7 {Contributed: 0}</tspan></tspan>
-<tspan x="0" dy="19"><tspan fill="#953800">Stars:</tspan><tspan fill="#c9ccd1"> ................................................ </tspan><tspan fill="#0969da">0</tspan></tspan>
-<tspan x="0" dy="19"><tspan fill="#953800">Commits:</tspan><tspan fill="#c9ccd1"> ............................................ </tspan><tspan fill="#24292e">141</tspan></tspan>
-<tspan x="0" dy="19"><tspan fill="#953800">Followers:</tspan><tspan fill="#c9ccd1"> ............................................ </tspan><tspan fill="#0969da">1</tspan></tspan>
-<tspan x="0" dy="19"><tspan fill="#953800">Lines of Code:</tspan><tspan fill="#c9ccd1"> .................................. </tspan><tspan fill="#24292e">179,986 (</tspan><tspan fill="#1a7f37">+127,186</tspan><tspan fill="#24292e">, </tspan><tspan fill="#cf222e">-52,800</tspan><tspan fill="#24292e">)</tspan></tspan></text>
+<tspan x="0" dy="19"><tspan fill="#953800">Repos:</tspan><tspan fill="#c9ccd1"> ............................. </tspan><tspan fill="#24292e">42 {Contributed: 15}</tspan></tspan>
+<tspan x="0" dy="19"><tspan fill="#953800">Stars:</tspan><tspan fill="#c9ccd1"> .............................................. </tspan><tspan fill="#0969da">128</tspan></tspan>
+<tspan x="0" dy="19"><tspan fill="#953800">Commits:</tspan><tspan fill="#c9ccd1"> .......................................... </tspan><tspan fill="#24292e">3,456</tspan></tspan>
+<tspan x="0" dy="19"><tspan fill="#953800">Followers:</tspan><tspan fill="#c9ccd1"> ........................................... </tspan><tspan fill="#0969da">96</tspan></tspan>
+<tspan x="0" dy="19"><tspan fill="#953800">Lines of Code:</tspan><tspan fill="#c9ccd1"> .................................. </tspan><tspan fill="#24292e">154,866 (</tspan><tspan fill="#1a7f37">+120,345</tspan><tspan fill="#24292e">, </tspan><tspan fill="#cf222e">-34,521</tspan><tspan fill="#24292e">)</tspan></tspan></text>
 </g>
 </svg>
