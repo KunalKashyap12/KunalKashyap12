@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="854.4" height="282" viewBox="0 0 854.4 282">
+<rect width="854.4" height="282" rx="10" fill="#ffffff" stroke="#e1e4e8" stroke-width="1"/>
+<style>text{font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;}</style>
+<text x="24" y="38" font-size="8" font-family="Consolas, Menlo, monospace" fill="#0969da" xml:space="preserve">
+<tspan x="24" dy="0">.................::::::::::::::.................</tspan>
+<tspan x="24" dy="8.0">............::::::::::::::::::::::::............</tspan>
+<tspan x="24" dy="8.0">.........::::::::::::::::::::::::::::::.........</tspan>
+<tspan x="24" dy="8.0">.......::::::::::::::::::::::::::::::::::.......</tspan>
+<tspan x="24" dy="8.0">.....::::::::::::::::::::::::::::::::::::::.....</tspan>
+<tspan x="24" dy="8.0">....::::::::::::::::-=+**+=-::::::::::::::::....</tspan>
+<tspan x="24" dy="8.0">...:::::::::::::::=*%%%%%%%%#=:::::::::::::::...</tspan>
+<tspan x="24" dy="8.0">..:::::::::::::::+%%%%%%%%%%%%*:::::::::::::::..</tspan>
+<tspan x="24" dy="8.0">.:::::::::::::::-%%%%%%%%%%%%%%=:::::::::::::::.</tspan>
+<tspan x="24" dy="8.0">::::::::::::::::-%%%%%%%%%%%%%%=::::::::::::::::</tspan>
+<tspan x="24" dy="8.0">:::::::::::::::::+%%%%%%%%%%%%*:::::::::::::::::</tspan>
+<tspan x="24" dy="8.0">::::::::::::::::::=#%%%%%%%%#+-:::::::::::::::::</tspan>
+<tspan x="24" dy="8.0">:::::::::::::::::::-+*#%%%#+-:::::::::::::::::::</tspan>
+<tspan x="24" dy="8.0">::::::::::::::::=+##%%%%%%%%##+=-:::::::::::::::</tspan>
+<tspan x="24" dy="8.0">::::::::::::::=#%%%%%%%%%%%%%%%%#+::::::::::::::</tspan>
+<tspan x="24" dy="8.0">.:::::::::::-*%%%%%%%%%%%%%%%%%%%%#-:::::::::::.</tspan>
+<tspan x="24" dy="8.0">..:::::::::-#%%%%%%%%%%%%%%%%%%%%%%#-:::::::::..</tspan>
+<tspan x="24" dy="8.0">...::::::::*%%%%%%%%%%%%%%%%%%%%%%%%#::::::::...</tspan>
+<tspan x="24" dy="8.0">....::::::-%%%%%%%%%%%%%%%%%%%%%%%%%%-::::::....</tspan>
+<tspan x="24" dy="8.0">.....::::::-----================-----::::::.....</tspan>
+<tspan x="24" dy="8.0">.......::::.::::::::::::::::::::::::.::::.......</tspan>
+<tspan x="24" dy="8.0">.........::::::::::::::::::::::::::::::.........</tspan>
+<tspan x="24" dy="8.0">............::::::::::::::::::::::::............</tspan>
+<tspan x="24" dy="8.0">................::::::::::::::::................</tspan>
+</text>
+<line x1="274.4" y1="20" x2="274.4" y2="262" stroke="#e1e4e8" stroke-width="1"/>
+<text x="294.4" y="38" font-size="18" font-weight="700" fill="#24292e">yourusername@github</text>
+<line x1="294.4" y1="50" x2="830.4" y2="50" stroke="#e1e4e8" stroke-width="1"/>
+<text x="294.4" y="70" font-size="14" fill="#586069">Uptime:</text>
+<text x="490.4" y="70" font-size="14" fill="#24292e">3 years, 2 months, 10 days</text>
+<text x="294.4" y="96" font-size="14" fill="#586069">Repos:</text>
+<text x="490.4" y="96" font-size="14" fill="#24292e">42 (contributed to 12)</text>
+<text x="294.4" y="122" font-size="14" fill="#586069">Stars:</text>
+<text x="490.4" y="122" font-size="14" fill="#24292e">128</text>
+<text x="294.4" y="148" font-size="14" fill="#586069">Followers:</text>
+<text x="490.4" y="148" font-size="14" fill="#24292e">56</text>
+<text x="294.4" y="174" font-size="14" fill="#586069">Commits:</text>
+<text x="490.4" y="174" font-size="14" fill="#24292e">1,834</text>
+<text x="294.4" y="200" font-size="14" fill="#586069">Top Languages:</text>
+<text x="490.4" y="200" font-size="14" fill="#24292e">Python, JavaScript, TypeScript, Go</text>
+<text x="294.4" y="232" font-size="14" fill="#586069">Lines of Code:</text>
+<text x="490.4" y="232" font-size="14" fill="#24292e">255,700 (<tspan fill="#1a7f37">+210,500</tspan>, <tspan fill="#cf222e">-45,200</tspan>)</text>
+</svg>
