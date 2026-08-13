@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="460" viewBox="0 0 820 460">
+  <style>
+    .terminal {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 13px;
+      fill: #24292f;
+      white-space: pre;
+    }
+  </style>
+  <rect width="100%" height="100%" rx="10" fill="#ffffff" stroke="#d0d7de" stroke-width="2"/>
+  <text x="20" y="20" class="terminal">
+  <tspan x="20" dy="1.2em">          g@M%@x%%@N%Nw,,         YOUR_GITHUB_USERNAME@github</tspan>
+  <tspan x="20" dy="1.2em">       ,.M*'||*%gNM=|mM%g|%N,     --------------------</tspan>
+  <tspan x="20" dy="1.2em">       p!'|'''|  '`'''|jhlj%w     OS: ............. Windows 11, Linux</tspan>
+  <tspan x="20" dy="1.2em">     ,@L. ''         ''!|j%M%X    Uptime: ......... 24 years, 151 days</tspan>
+  <tspan x="20" dy="1.2em">    ]j' .,wp@pw,          '%Wg    Host: ........... Full-Stack Developer</tspan>
+  <tspan x="20" dy="1.2em">  /{||]j@@@@@@@@@pp.              IDE: ............ VS Code, Neovim</tspan>
+  <tspan x="20" dy="1.2em">      '1@@@@@@@@@@@@p             </tspan>
+  <tspan x="20" dy="1.2em">    . :]XX@@@@@@@@%%%kH ' *|mkr   Languages.Prog: . Python, JavaScript, C++, Java</tspan>
+  <tspan x="20" dy="1.2em">    j%M'    |jkk' ~nrn=i          Languages.Real: . English</tspan>
+  <tspan x="20" dy="1.2em">  ! jrr*^           "! L'':!      </tspan>
+  <tspan x="20" dy="1.2em">  j 1p;,. ./ @@  ,  ,;\nmy ~      Hobbies.Software: Open Source, Jailbreaking</tspan>
+  <tspan x="20" dy="1.2em">  i r @@@@mMH @@@@  ^*****M* p j  Hobbies.Hardware: Overclocking</tspan>
+  <tspan x="20" dy="1.2em">  | ]@@@@HH]p%%%%%%H,jmgpmh% j    </tspan>
+  <tspan x="20" dy="1.2em">  ;;%XXXX%@] ,n|.;j%kK|%kXX',|    Contact</tspan>
+  <tspan x="20" dy="1.2em">  H%kXXXXXj%k||,,;;j!'%i3j]@      Email: .......... hello@example.com</tspan>
+  <tspan x="20" dy="1.2em">  "djjmkl,"]]||,,,,wwxw|#kjk`     Discord: ........ @yourdiscord</tspan>
+  <tspan x="20" dy="1.2em">    %;%km%%%%M%|%%jkkii|||[       </tspan>
+  <tspan x="20" dy="1.2em">    kjj%xKkk1||,,||||j]||'`       GitHub Stats</tspan>
+  <tspan x="20" dy="1.2em">    |jm@@@@b%%kkmk%i||,[          Repos: .... 0     | Followers: ... 0</tspan>
+  <tspan x="20" dy="1.2em">    @p|j%XXXXjkk||j*';j[          </tspan>
+  <tspan x="20" dy="1.2em">    ]@00g|    .  ...;j%k          </tspan>
+  <tspan x="20" dy="1.2em">    @@@@@@mgmp;,,,,;;jj%%k%       </tspan>
+  </text>
+</svg>
