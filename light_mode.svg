@@ -1,20 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="584" height="282" viewBox="0 0 584 282">
-<rect width="584" height="282" rx="10" fill="#ffffff" stroke="#e1e4e8" stroke-width="1"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="484" height="581" viewBox="0 0 484 581">
+<rect width="484" height="581" rx="10" fill="#ffffff" stroke="#e1e4e8" stroke-width="1"/>
 <style>text{font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;}</style>
-<text x="24" y="38" font-size="18" font-weight="700" fill="#24292e">KunalKashyap12@github</text>
-<line x1="24" y1="50" x2="560" y2="50" stroke="#e1e4e8" stroke-width="1"/>
-<text x="24" y="70" font-size="14" fill="#586069">Uptime:</text>
-<text x="220" y="70" font-size="14" fill="#24292e">1 years, 2 months, 24 days</text>
-<text x="24" y="96" font-size="14" fill="#586069">Repos:</text>
-<text x="220" y="96" font-size="14" fill="#24292e">7 (contributed to 0)</text>
-<text x="24" y="122" font-size="14" fill="#586069">Stars:</text>
-<text x="220" y="122" font-size="14" fill="#24292e">0</text>
-<text x="24" y="148" font-size="14" fill="#586069">Followers:</text>
-<text x="220" y="148" font-size="14" fill="#24292e">1</text>
-<text x="24" y="174" font-size="14" fill="#586069">Commits:</text>
-<text x="220" y="174" font-size="14" fill="#24292e">140</text>
-<text x="24" y="200" font-size="14" fill="#586069">Top Languages:</text>
-<text x="220" y="200" font-size="14" fill="#24292e">Python, Jupyter Notebook, Java, CSS</text>
-<text x="24" y="232" font-size="14" fill="#586069">Lines of Code:</text>
-<text x="220" y="232" font-size="14" fill="#24292e">179,986 (<tspan fill="#1a7f37">+127,186</tspan>, <tspan fill="#cf222e">-52,800</tspan>)</text>
+<g transform="translate(24,38)">
+<text x="0" y="0" font-size="13" font-family="Consolas, Menlo, monospace" xml:space="preserve"><tspan x="0" dy="0"><tspan fill="#24292e" font-weight="700" font-size="16">KunalKashyap12@github</tspan></tspan>
+<tspan x="0" dy="19"><tspan fill="#c9ccd1">------------------------------------------------------</tspan></tspan>
+<tspan x="0" dy="19"><tspan fill="#953800">OS:</tspan><tspan fill="#c9ccd1"> ................................... </tspan><tspan fill="#24292e">Windows 10, Linux</tspan></tspan>
+<tspan x="0" dy="19"><tspan fill="#953800">Uptime:</tspan><tspan fill="#c9ccd1"> ...................... </tspan><tspan fill="#24292e">1 years, 2 months, 24 days</tspan></tspan>
+<tspan x="0" dy="19"><tspan fill="#953800">Host:</tspan><tspan fill="#c9ccd1"> ............................ </tspan><tspan fill="#24292e">Company / Machine name</tspan></tspan>
+<tspan x="0" dy="19"><tspan fill="#953800">Kernel:</tspan><tspan fill="#c9ccd1"> ........................... </tspan><tspan fill="#24292e">Your job title / role</tspan></tspan>
+<tspan x="0" dy="19"><tspan fill="#953800">IDE:</tspan><tspan fill="#c9ccd1"> .................................... </tspan><tspan fill="#24292e">VSCode, PyCharm</tspan></tspan>
+<tspan x="0" dy="19"></tspan>
+<tspan x="0" dy="19"><tspan fill="#953800">Languages.Programming:</tspan><tspan fill="#c9ccd1"> .... </tspan><tspan fill="#24292e">Python, JavaScript, Java, C++</tspan></tspan>
+<tspan x="0" dy="19"><tspan fill="#953800">Languages.Computer:</tspan><tspan fill="#c9ccd1"> ............... </tspan><tspan fill="#24292e">HTML, CSS, JSON, YAML</tspan></tspan>
+<tspan x="0" dy="19"><tspan fill="#953800">Languages.Real:</tspan><tspan fill="#c9ccd1"> .......................... </tspan><tspan fill="#24292e">English, Hindi</tspan></tspan>
+<tspan x="0" dy="19"></tspan>
+<tspan x="0" dy="19"><tspan fill="#953800">Hobbies.Software:</tspan><tspan fill="#c9ccd1"> .................. </tspan><tspan fill="#24292e">Open source, Web dev</tspan></tspan>
+<tspan x="0" dy="19"><tspan fill="#953800">Hobbies.Hardware:</tspan><tspan fill="#c9ccd1"> ........................... </tspan><tspan fill="#24292e">PC building</tspan></tspan>
+<tspan x="0" dy="19"></tspan>
+<tspan x="0" dy="19"><tspan fill="#8250df" font-weight="700">--- Contact ---</tspan></tspan>
+<tspan x="0" dy="19"><tspan fill="#953800">Email:</tspan><tspan fill="#c9ccd1"> .................................. </tspan><tspan fill="#24292e">you@example.com</tspan></tspan>
+<tspan x="0" dy="19"><tspan fill="#953800">LinkedIn:</tspan><tspan fill="#c9ccd1"> .................................... </tspan><tspan fill="#24292e">yourhandle</tspan></tspan>
+<tspan x="0" dy="19"><tspan fill="#953800">Discord:</tspan><tspan fill="#c9ccd1"> ..................................... </tspan><tspan fill="#24292e">yourhandle</tspan></tspan>
+<tspan x="0" dy="19"></tspan>
+<tspan x="0" dy="19"><tspan fill="#8250df" font-weight="700">--- GitHub Stats ---</tspan></tspan>
+<tspan x="0" dy="19"><tspan fill="#953800">Repos:</tspan><tspan fill="#c9ccd1"> ............................... </tspan><tspan fill="#24292e">7 {Contributed: 0}</tspan></tspan>
+<tspan x="0" dy="19"><tspan fill="#953800">Stars:</tspan><tspan fill="#c9ccd1"> ................................................ </tspan><tspan fill="#0969da">0</tspan></tspan>
+<tspan x="0" dy="19"><tspan fill="#953800">Commits:</tspan><tspan fill="#c9ccd1"> ............................................ </tspan><tspan fill="#24292e">141</tspan></tspan>
+<tspan x="0" dy="19"><tspan fill="#953800">Followers:</tspan><tspan fill="#c9ccd1"> ............................................ </tspan><tspan fill="#0969da">1</tspan></tspan>
+<tspan x="0" dy="19"><tspan fill="#953800">Lines of Code:</tspan><tspan fill="#c9ccd1"> .................................. </tspan><tspan fill="#24292e">179,986 (</tspan><tspan fill="#1a7f37">+127,186</tspan><tspan fill="#24292e">, </tspan><tspan fill="#cf222e">-52,800</tspan><tspan fill="#24292e">)</tspan></tspan></text>
+</g>
 </svg>
