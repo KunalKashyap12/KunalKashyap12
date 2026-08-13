@@ -6,7 +6,7 @@ import requests
 # 1. YOUR CONFIGURATION
 # -------------------------------------------------------------
 GITHUB_USERNAME = "KunalKashyap12"
-BIRTH_DATE = datetime.datetime(2002, 3, 15)  # (YYYY, MM, DD)
+BIRTH_DATE = datetime.datetime(2007, 08, 22)  # (YYYY, MM, DD)
 
 # Your ASCII Art (Padded to 40 characters wide)
 ASCII_ART = [
@@ -55,21 +55,21 @@ followers_count = user_data.get("followers", 0)
 # Right-hand details (Padded with dots and dashes to stretch across the box)
 RIGHT_TEXT = [
     f"{KunalKashyap12}@github ---------------------------------------",
-    ". OS: .......................... Windows 11, Linux",
+    ". OS: .......................... Windows 11, macos",
     f". Uptime: ....................... {uptime_str}",
     ". Host: ......................... Full-Stack Developer",
     ". Kernel: ....................... Software Engineer",
-    ". IDE: .......................... VS Code, Neovim",
+    ". IDE: .......................... VS Code, Cursor",
     "",
-    ". Languages.Prog: .............. Python, JavaScript, C++, Java",
-    ". Languages.Real: .............. English",
+    ". Languages.Prog: .............. Python, C++, C, HTML, CSS",
+    ". Languages.Real: .............. English, Hindi",
     "",
-    ". Hobbies.Software: ............ Open Source, Jailbreaking",
+    ". Hobbies.Software: ............ Building AI System",
     ". Hobbies.Hardware: ............ Overclocking",
     "",
     "- Contact ------------------------------------------------------",
-    ". Email: ....................... hello@example.com",
-    ". Discord: ..................... @yourdiscord",
+    ". Email: ....................... kunalkashyap5301@gmail.com.com",
+    ". Linkedin: ..................... @kunalkashyap-cs",
     "",
     "- GitHub Stats -------------------------------------------------",
     f". Repos: .... {repos_count:<5} | Followers: ... {followers_count}"
