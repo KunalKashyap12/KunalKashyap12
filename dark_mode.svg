@@ -39,9 +39,9 @@
 <text x="294.4" y="148" font-size="14" fill="#8b949e">Followers:</text>
 <text x="490.4" y="148" font-size="14" fill="#c9d1d9">1</text>
 <text x="294.4" y="174" font-size="14" fill="#8b949e">Commits:</text>
-<text x="490.4" y="174" font-size="14" fill="#c9d1d9">135</text>
+<text x="490.4" y="174" font-size="14" fill="#c9d1d9">136</text>
 <text x="294.4" y="200" font-size="14" fill="#8b949e">Top Languages:</text>
 <text x="490.4" y="200" font-size="14" fill="#c9d1d9">Python, Jupyter Notebook, Java, CSS</text>
 <text x="294.4" y="232" font-size="14" fill="#8b949e">Lines of Code:</text>
-<text x="490.4" y="232" font-size="14" fill="#c9d1d9">0 (<tspan fill="#3fb950">+0</tspan>, <tspan fill="#f85149">-0</tspan>)</text>
+<text x="490.4" y="232" font-size="14" fill="#c9d1d9">179,986 (<tspan fill="#3fb950">+127,186</tspan>, <tspan fill="#f85149">-52,800</tspan>)</text>
 </svg>
