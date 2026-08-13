@@ -8,72 +8,33 @@ import requests
 GITHUB_USERNAME = "KunalKashyap12"
 BIRTH_DATE = datetime.datetime(2002, 3, 15)  # (YYYY, MM, DD)
 
-# Your converted ASCII art
+# Your ASCII Art (Padded to 40 characters wide)
 ASCII_ART = [
-    # "          g@M%@x%%@N%Nw,,      ",
-    # "       ,.M*'||*%gNM=|mM%g|%N,  ",
-    # "       p!'|'''|  '`'''|jhlj%w  ",
-    # "     ,@L. ''         ''!|j%M%X ",
-    # "    ]j' .,wp@pw,          '%Wg ",
-    # "  /{||]j@@@@@@@@@pp.           ",
-    # "      '1@@@@@@@@@@@@p          ",
-    # "    . :]XX@@@@@@@@%%%kH ' *|mkr",
-    # "    j%M'    |jkk' ~nrn=i       ",
-    # "  ! jrr*^           \"! L'':!   ",
-    # "  j 1p;,. ./ @@  ,  ,;\\nmy ~   ",
-    # "  i r @@@@mMH @@@@  ^*****M* p j",
-    # "  | ]@@@@HH]p%%%%%%H,jmgpmh% j ",
-    # "  ;;%XXXX%@] ,n|.;j%kK|%kXX',| ",
-    # "  H%kXXXXXj%k||,,;;j!'%i3j]@   ",
-    # "  \"djjmkl,\"]]||,,,,wwxw|#kjk`  ",
-    # "    %;%km%%%%M%|%%jkkii|||[    ",
-    # "    kjj%xKkk1||,,||||j]||'`    ",
-    # "    |jm@@@@b%%kkmk%i||,[       ",
-    # "    @p|j%XXXXjkk||j*';j[       ",
-    # "    ]@00g|    .  ...;j%k       ",
-    # "    @@@@@@mgmp;,,,,;;jj%%k%    "
-    """     --=+++=--:                          
-                      -*%######%%%%#%%#*-                      
-                    *%%%%%%%%%%%%%%@%%%%%#.                    
-                   %#%%%%%#%@@@@%%@@@%%%%#*-.                  
-                 .#%@%%%%@%@@@@@@@@@@@@@@@%#*.                 
-                 #%@@@%%%%@@@@@%##%%@@@@@@@%#*:                
-               .#%%@@@@%%####*=====++##%@@%%%#-                
-               -%@%@@%#*+++==-----====++#%@%%#-                
-                -%%@@#+++=-----:::---===*%@%%*:                
-                .%%@#++++==------=+*****+#@%%:                 
-                 =%@##*+++-=+*##*+-.=====%*%#                  
-                 :%@*+*+#*=++#==#++=*+++=**%=                  
-                 :**#==++===+=--==------=+-*-                  
-                 .++=++---=*=-::--+++++==--*:                  
-                  =*=====--+*#*+**=:----===+.                  
-                  .#=+===--===-===-----=====.                  
-                  .+=+++==+=******=========.                   
-                   .-++++++++=======+=====.                    
-                   ..=+++++*++=-==+++++==:.                    
-                   ...++**+++=======++++-..                    
-                   ..:+*#**************+-..                    
-                   ..=+**##########***+++.                     
-                  ...+++++**********+++++.                     
-                    .:+++++****+++++===+-.                     
-              ..     .+++++++++++++==++=.     ...              
-           ....:=+**+--=+++==++=====+++:.  .                   
-              ::-:=-:-:--=+===========-:#+:          .. .      
-  ...        ..:-.-:..:::------------::=:::--        .....     
-.....        ...:.......:.:-:------:..::......::::.  .....     
-.: :..          .:... ...::.::::--. ..:....          . ..  .   
-...:...         .: :.   ...::::-:   ..:....         .. :. .... 
-..:....         .. :.     .. .:.  .::....           ...:. .... 
-....:..         .. ...        ..:..:..:. .          .. .. .... 
-....:.......     . :.        ..    .. .             .:.:. .....
-...:.::....     .. :.      ...     .. .             .. .. .....
-....-::.....    .: .        ..     .. .             .:.....:...
-.....-:.....    .. ..       ..    ... .             ...:...:...
-.....::.......  .. .        ..     .. .           . .:::..:.:..
-......-:.............    . ..      ...:.        ......:.:::.:..
-......:-::.......:......  ...     ....=: ....   .....:..::-.-..
-
-    """
+    "      --=+++=--:                        ",
+    "               -*%######%%%%#%%#*-      ",
+    "             *%%%%%%%%%%%%%%@%%%%%#.    ",
+    "            %#%%%%%#%@@@@%%@@@%%%%#*-.  ",
+    "           .#%@%%%%@%@@@@@@@@@@@@@@@%#*.",
+    "           #%@@@%%%%@@@@@%##%%@@@@@@@%#*:",
+    "          .#%%@@@@%%####*=====++##%@@%%%#-",
+    "          -%@%@@%#*+++==-----====++#%@%%#-",
+    "           -%%@@#+++=-----:::---===*%@%%*:",
+    "           .%%@#++++==------=+*****+#@%%: ",
+    "            =%@##*+++-=+*##*+-.=====%*%#  ",
+    "            :%@*+*+#*=++#==#++=*+++=**%=  ",
+    "            :**#==++===+=--==------=+-*-  ",
+    "            .++=++---=*=-::--+++++==--*:  ",
+    "             =*=====--+*#*+**=:----===+.  ",
+    "             .#=+===--===-===-----=====.  ",
+    "             .+=+++==+=******=========.   ",
+    "              .-++++++++=======+=====.    ",
+    "              ..=+++++*++=-==+++++==:.    ",
+    "              ...++**+++=======++++-..    ",
+    "              ..:+*#**************+-..    ",
+    "              ..=+**##########***+++.     ",
+    "             ...+++++**********+++++.     ",
+    "              .:+++++****+++++===+-.      ",
+    "         ..     .+++++++++++++==++=.      "
 ]
 
 # -------------------------------------------------------------
@@ -81,7 +42,7 @@ ASCII_ART = [
 # -------------------------------------------------------------
 now = datetime.datetime.now()
 years = now.year - BIRTH_DATE.year - ((now.month, now.day) < (BIRTH_DATE.month, BIRTH_DATE.day))
-days = (now - BIRTH_DATE.replace(year=now.year if (now.month, now.day) >= (BIRTH_DATE.month, BIRTH_DATE.day)) else now.year - 1)).days
+days = (now - BIRTH_DATE.replace(year=now.year if (now.month, now.day) >= (BIRTH_DATE.month, BIRTH_DATE.day) else now.year - 1)).days
 uptime_str = f"{years} years, {days} days"
 
 # Fetch GitHub Stats
@@ -91,12 +52,13 @@ user_data = requests.get(f"https://api.github.com/users/{GITHUB_USERNAME}", head
 repos_count = user_data.get("public_repos", 0)
 followers_count = user_data.get("followers", 0)
 
-# Right-hand details (Padded to stretch across the box nicely)
+# Right-hand details (Padded with dots and dashes to stretch across the box)
 RIGHT_TEXT = [
-    f"{GITHUB_USERNAME}@github ----------------------------------",
+    f"{GITHUB_USERNAME}@github ---------------------------------------",
     ". OS: .......................... Windows 11, Linux",
     f". Uptime: ....................... {uptime_str}",
     ". Host: ......................... Full-Stack Developer",
+    ". Kernel: ....................... Software Engineer",
     ". IDE: .......................... VS Code, Neovim",
     "",
     ". Languages.Prog: .............. Python, JavaScript, C++, Java",
@@ -105,11 +67,11 @@ RIGHT_TEXT = [
     ". Hobbies.Software: ............ Open Source, Jailbreaking",
     ". Hobbies.Hardware: ............ Overclocking",
     "",
-    "- Contact -------------------------------------------------",
+    "- Contact ------------------------------------------------------",
     ". Email: ....................... hello@example.com",
     ". Discord: ..................... @yourdiscord",
     "",
-    "- GitHub Stats --------------------------------------------",
+    "- GitHub Stats -------------------------------------------------",
     f". Repos: .... {repos_count:<5} | Followers: ... {followers_count}"
 ]
 
@@ -120,9 +82,10 @@ max_lines = max(len(ASCII_ART), len(RIGHT_TEXT))
 lines = []
 
 for i in range(max_lines):
-    left = ASCII_ART[i] if i < len(ASCII_ART) else " " * 31
+    left = ASCII_ART[i] if i < len(ASCII_ART) else " " * 40
     right = RIGHT_TEXT[i] if i < len(RIGHT_TEXT) else ""
-    line = f"{left:<33} {right}".replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    # Escape special XML characters
+    line = f"{left:<42} {right}".replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
     lines.append(line)
 
 def create_svg(filename, bg_color, text_color, border_color):
@@ -130,8 +93,8 @@ def create_svg(filename, bg_color, text_color, border_color):
         [f'  <tspan x="25" dy="18">{line}</tspan>' for line in lines]
     )
     
-    # Adjusted canvas height (450) and larger bold font (14px bold) to fill the box
-    svg_content = f"""<svg xmlns="http://www.w3.org/2000/svg" width="950" height="450" viewBox="0 0 950 450">
+    # Custom width (1050), height (500), and bold font family (14px)
+    svg_content = f"""<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="500" viewBox="0 0 1050 500">
   <style>
     .terminal {{
       font-family: 'Consolas', 'Fira Code', 'Courier New', monospace;
@@ -150,5 +113,8 @@ def create_svg(filename, bg_color, text_color, border_color):
     with open(filename, "w", encoding="utf-8") as f:
         f.write(svg_content)
 
+# Generate SVGs
 create_svg("dark_mode_preview.svg", "#0d1117", "#c9d1d9", "#30363d")
 create_svg("light_mode_preview.svg", "#ffffff", "#24292f", "#d0d7de")
+
+print("Successfully generated dark_mode_preview.svg and light_mode_preview.svg!")
