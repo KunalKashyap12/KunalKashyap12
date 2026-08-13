@@ -4,7 +4,9 @@ generate_readme_stats.py
 
 Pulls live stats for a GitHub user (repos, stars, followers, commits,
 lines of code added/removed) and renders two SVG cards -- light_mode.svg
-and dark_mode.svg -- styled like a neofetch terminal output.
+and dark_mode.svg -- styled like a neofetch terminal output, with an
+ASCII-art avatar on the left and a colorful "fetch" block on the right
+(OS / Host / Kernel / Languages / Hobbies / Contact / GitHub Stats).
 
 Requires:
     - Environment variable GH_TOKEN (a GitHub Personal Access Token with
@@ -32,6 +34,27 @@ TOKEN = os.environ.get("GH_TOKEN")
 # Falls back to placeholder_profile.png if nothing else is found.
 PROFILE_IMAGE_CANDIDATES = ["profile.png", "profile.jpg", "profile.jpeg"]
 PLACEHOLDER_IMAGE = "placeholder_profile.png"
+
+
+# --------------------------------------------------------------------------
+# EDIT ME -- everything below is the static "fetch" info shown on the card.
+# Nothing here is pulled from the GitHub API; fill in your own details.
+# Any field can be left as an empty string "" to hide that row.
+# --------------------------------------------------------------------------
+CONFIG = {
+    "os": "Windows 10, Linux",
+    "host": "Company / Machine name",
+    "kernel": "Your job title / role",
+    "ide": "VSCode, PyCharm",
+    "languages_programming": "Python, JavaScript, Java, C++",
+    "languages_computer": "HTML, CSS, JSON, YAML",
+    "languages_real": "English, Hindi",
+    "hobbies_software": "Open source, Web dev",
+    "hobbies_hardware": "PC building",
+    "email_personal": "you@example.com",
+    "linkedin": "yourhandle",
+    "discord": "yourhandle",
+}
 
 if not TOKEN:
     print("ERROR: GH_TOKEN environment variable is not set.", file=sys.stderr)
@@ -156,17 +179,6 @@ def get_lines_of_code():
     return additions, deletions
 
 
-def get_languages():
-    user = get_user_overview()
-    langs = {}
-    for repo in user["repositories"]["nodes"]:
-        lang = repo["primaryLanguage"]
-        if lang:
-            langs[lang["name"]] = langs.get(lang["name"], 0) + 1
-    top = sorted(langs.items(), key=lambda kv: kv[1], reverse=True)
-    return [name for name, _ in top[:4]] or ["N/A"]
-
-
 def format_uptime(created):
     now = datetime.datetime.utcnow()
     delta_days = (now - created).days
@@ -179,7 +191,6 @@ def collect_stats():
     user = get_user_overview()
     commits, created = get_total_commits()
     additions, deletions = get_lines_of_code()
-    languages = get_languages()
 
     stars = sum(r["stargazerCount"] for r in user["repositories"]["nodes"])
 
@@ -193,7 +204,6 @@ def collect_stats():
         "commits": commits,
         "additions": additions,
         "deletions": deletions,
-        "languages": ", ".join(languages),
     }
 
 
@@ -238,7 +248,7 @@ def image_to_ascii(path, cols=48):
 
 
 # --------------------------------------------------------------------------
-# SVG rendering
+# SVG rendering -- neofetch-style terminal block
 # --------------------------------------------------------------------------
 
 THEMES = {
@@ -246,8 +256,10 @@ THEMES = {
         "bg": "#ffffff",
         "border": "#e1e4e8",
         "title": "#24292e",
-        "label": "#586069",
+        "label": "#953800",       # burnt orange, like the reference image
+        "section": "#8250df",     # purple section headers
         "value": "#24292e",
+        "dot": "#c9ccd1",
         "accent": "#0969da",
         "add": "#1a7f37",
         "del": "#cf222e",
@@ -256,21 +268,28 @@ THEMES = {
         "bg": "#0d1117",
         "border": "#30363d",
         "title": "#58a6ff",
-        "label": "#8b949e",
+        "label": "#e3b341",       # amber labels
+        "section": "#d2a8ff",     # light purple section headers
         "value": "#c9d1d9",
+        "dot": "#484f58",
         "accent": "#58a6ff",
         "add": "#3fb950",
         "del": "#f85149",
     },
 }
 
-ROW_HEIGHT = 26
-TOP_PADDING = 70
-STATS_COL_WIDTH = 560
-
 ASCII_FONT_SIZE = 8
 ASCII_LINE_HEIGHT = ASCII_FONT_SIZE * 1.0
 ASCII_CHAR_WIDTH = ASCII_FONT_SIZE * 0.6  # approx monospace advance width
+
+TERM_FONT_SIZE = 13
+TERM_LINE_HEIGHT = 19
+TERM_CHAR_WIDTH = TERM_FONT_SIZE * 0.6  # approx monospace advance width
+LINE_CHARS = 56  # target label+dots+value width, in characters
+
+
+def esc(s):
+    return html.escape(str(s))
 
 
 def render_ascii_block(ascii_lines, x, top, t):
@@ -283,7 +302,7 @@ def render_ascii_block(ascii_lines, x, top, t):
         f'xml:space="preserve">'
     ]
     for i, line in enumerate(ascii_lines):
-        escaped = html.escape(line).replace(" ", "\u00A0")
+        escaped = esc(line).replace(" ", "\u00A0")
         dy = 0 if i == 0 else ASCII_LINE_HEIGHT
         out.append(f'<tspan x="{x}" dy="{dy}">{escaped}</tspan>')
     out.append("</text>")
@@ -293,28 +312,133 @@ def render_ascii_block(ascii_lines, x, top, t):
     return "\n".join(out), block_width, block_height
 
 
+def dot_leader(label, value, total_chars=LINE_CHARS):
+    """Return the number of '.' characters to pad label..value to width."""
+    used = len(label) + len(value) + 2  # +2 for ": " and a trailing space
+    return max(3, total_chars - used)
+
+
+class TermBlock:
+    """Builds up a list of monospaced terminal lines as SVG tspans."""
+
+    def __init__(self, t):
+        self.t = t
+        self.tspans = []
+        self.line_count = 0
+
+    def _push(self, content):
+        dy = 0 if self.line_count == 0 else TERM_LINE_HEIGHT
+        self.tspans.append(f'<tspan x="0" dy="{dy}">{content}</tspan>')
+        self.line_count += 1
+
+    def blank(self):
+        self._push("")
+
+    def header(self, text):
+        t = self.t
+        rule = "-" * 3
+        self._push(
+            f'<tspan fill="{t["section"]}" font-weight="700">{rule} {esc(text)} {rule}</tspan>'
+        )
+
+    def row(self, label, value, value_color=None):
+        if value in (None, ""):
+            return
+        t = self.t
+        vcolor = value_color or t["value"]
+        dots = "." * dot_leader(label, str(value))
+        self._push(
+            f'<tspan fill="{t["label"]}">{esc(label)}:</tspan>'
+            f'<tspan fill="{t["dot"]}"> {dots} </tspan>'
+            f'<tspan fill="{vcolor}">{esc(value)}</tspan>'
+        )
+
+    def raw(self, content):
+        self._push(content)
+
+    def render(self, x, y):
+        body = "\n".join(self.tspans)
+        return (
+            f'<text x="{x}" y="{y}" font-size="{TERM_FONT_SIZE}" '
+            f'font-family="Consolas, Menlo, monospace" xml:space="preserve">'
+            f'{body}</text>'
+        )
+
+    def height_px(self):
+        return self.line_count * TERM_LINE_HEIGHT
+
+
+def build_term_block(stats, t):
+    tb = TermBlock(t)
+    tb.raw(
+        f'<tspan fill="{t["title"]}" font-weight="700" font-size="16">'
+        f'{esc(stats["username"])}@github</tspan>'
+    )
+    tb.raw(f'<tspan fill="{t["dot"]}">{"-" * (LINE_CHARS - 2)}</tspan>')
+    tb.line_count += 1  # the raw() header line above
+
+    tb.row("OS", CONFIG.get("os", ""))
+    tb.row("Uptime", stats["uptime"])
+    tb.row("Host", CONFIG.get("host", ""))
+    tb.row("Kernel", CONFIG.get("kernel", ""))
+    tb.row("IDE", CONFIG.get("ide", ""))
+    tb.blank()
+
+    tb.row("Languages.Programming", CONFIG.get("languages_programming", ""))
+    tb.row("Languages.Computer", CONFIG.get("languages_computer", ""))
+    tb.row("Languages.Real", CONFIG.get("languages_real", ""))
+    tb.blank()
+
+    tb.row("Hobbies.Software", CONFIG.get("hobbies_software", ""))
+    tb.row("Hobbies.Hardware", CONFIG.get("hobbies_hardware", ""))
+
+    if CONFIG.get("email_personal") or CONFIG.get("linkedin") or CONFIG.get("discord"):
+        tb.blank()
+        tb.header("Contact")
+        tb.row("Email", CONFIG.get("email_personal", ""))
+        tb.row("LinkedIn", CONFIG.get("linkedin", ""))
+        tb.row("Discord", CONFIG.get("discord", ""))
+
+    tb.blank()
+    tb.header("GitHub Stats")
+    tb.row(
+        "Repos",
+        f"{stats['repos']} {{Contributed: {stats['contributed_to']}}}",
+    )
+    tb.row("Stars", str(stats["stars"]), t["accent"])
+    tb.row("Commits", f"{stats['commits']:,}")
+    tb.row("Followers", str(stats["followers"]), t["accent"])
+
+    loc_total = stats["additions"] + stats["deletions"]
+    dots = "." * dot_leader("Lines of Code", f"{loc_total:,}")
+    tb._push(
+        f'<tspan fill="{t["label"]}">Lines of Code:</tspan>'
+        f'<tspan fill="{t["dot"]}"> {dots} </tspan>'
+        f'<tspan fill="{t["value"]}">{loc_total:,} (</tspan>'
+        f'<tspan fill="{t["add"]}">+{stats["additions"]:,}</tspan>'
+        f'<tspan fill="{t["value"]}">, </tspan>'
+        f'<tspan fill="{t["del"]}">-{stats["deletions"]:,}</tspan>'
+        f'<tspan fill="{t["value"]}">)</tspan>'
+    )
+
+    return tb
+
+
 def render_svg(stats, theme_name, ascii_lines=None):
     t = THEMES[theme_name]
 
-    rows = [
-        ("Uptime", stats["uptime"]),
-        ("Repos", f"{stats['repos']} (contributed to {stats['contributed_to']})"),
-        ("Stars", str(stats["stars"])),
-        ("Followers", str(stats["followers"])),
-        ("Commits", f"{stats['commits']:,}"),
-        ("Top Languages", stats["languages"]),
-    ]
+    tb = build_term_block(stats, t)
+    term_width = LINE_CHARS * TERM_CHAR_WIDTH
+    term_height = tb.height_px()
 
-    stats_height = TOP_PADDING + ROW_HEIGHT * (len(rows) + 1) + 30
-
-    # Figure out ASCII block size first so we know total card width/height.
-    ascii_x = 24
-    ascii_top = 38
+    ascii_x, ascii_top = 24, 38
     ascii_svg, ascii_w, ascii_h = render_ascii_block(ascii_lines or [], ascii_x, ascii_top, t)
 
-    stats_x = ascii_x + ascii_w + 40 if ascii_lines else 24
-    total_width = stats_x + STATS_COL_WIDTH
-    total_height = max(stats_height, ascii_top + ascii_h + 30)
+    term_x = ascii_x + ascii_w + 40 if ascii_lines else 24
+    term_y = 38
+
+    total_width = int(term_x + term_width + 24)
+    total_height = int(max(ascii_top + ascii_h, term_y + term_height) + 30)
 
     lines = []
     lines.append(
@@ -331,47 +455,16 @@ def render_svg(stats, theme_name, ascii_lines=None):
         '</style>'
     )
 
-    # ASCII art block (left column)
     if ascii_lines:
         lines.append(ascii_svg)
         lines.append(
-            f'<line x1="{stats_x - 20}" y1="20" x2="{stats_x - 20}" '
+            f'<line x1="{term_x - 20}" y1="20" x2="{term_x - 20}" '
             f'y2="{total_height - 20}" stroke="{t["border"]}" stroke-width="1"/>'
         )
 
-    # Title
-    lines.append(
-        f'<text x="{stats_x}" y="38" font-size="18" font-weight="700" '
-        f'fill="{t["title"]}">{stats["username"]}@github</text>'
-    )
-    lines.append(
-        f'<line x1="{stats_x}" y1="50" x2="{total_width - 24}" y2="50" '
-        f'stroke="{t["border"]}" stroke-width="1"/>'
-    )
-
-    y = TOP_PADDING
-    value_x = stats_x + 196
-    for label, value in rows:
-        lines.append(
-            f'<text x="{stats_x}" y="{y}" font-size="14" fill="{t["label"]}">{label}:</text>'
-        )
-        lines.append(
-            f'<text x="{value_x}" y="{y}" font-size="14" fill="{t["value"]}">{value}</text>'
-        )
-        y += ROW_HEIGHT
-
-    # Lines of code, added/removed colored
-    loc_label_y = y + 6
-    lines.append(
-        f'<text x="{stats_x}" y="{loc_label_y}" font-size="14" fill="{t["label"]}">'
-        f'Lines of Code:</text>'
-    )
-    lines.append(
-        f'<text x="{value_x}" y="{loc_label_y}" font-size="14" fill="{t["value"]}">'
-        f'{stats["additions"] + stats["deletions"]:,} ('
-        f'<tspan fill="{t["add"]}">+{stats["additions"]:,}</tspan>, '
-        f'<tspan fill="{t["del"]}">-{stats["deletions"]:,}</tspan>)</text>'
-    )
+    lines.append(f'<g transform="translate({term_x},{term_y})">')
+    lines.append(tb.render(0, 0))
+    lines.append("</g>")
 
     lines.append("</svg>")
     return "\n".join(lines)
