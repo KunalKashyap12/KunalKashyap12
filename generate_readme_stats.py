@@ -47,14 +47,14 @@ uptime_str = f"{years} years, {days} days"
 
 # Fetch GitHub Stats
 headers = {"Authorization": f"token {os.getenv('GH_TOKEN', '')}"} if os.getenv('GH_TOKEN') else {}
-user_data = requests.get(f"https://api.github.com/users/{GITHUB_USERNAME}", headers=headers).json()
+user_data = requests.get(f"https://api.github.com/users/{KunalKashyap12}", headers=headers).json()
 
 repos_count = user_data.get("public_repos", 0)
 followers_count = user_data.get("followers", 0)
 
 # Right-hand details (Padded with dots and dashes to stretch across the box)
 RIGHT_TEXT = [
-    f"{GITHUB_USERNAME}@github ---------------------------------------",
+    f"{KunalKashyap12}@github ---------------------------------------",
     ". OS: .......................... Windows 11, Linux",
     f". Uptime: ....................... {uptime_str}",
     ". Host: ......................... Full-Stack Developer",
